@@ -87,16 +87,14 @@ public class SuperTable{
               Bytes.toBytes("power"),Bytes.toBytes("healing"));
 
       p3.add(Bytes.toBytes("professional"),
-              Bytes.toBytes("name"),Bytes.toBytes("logan"));
+              Bytes.toBytes("name"), Bytes.toBytes("logan"));
 
       p3.add(Bytes.toBytes("professional"),
-              Bytes.toBytes("xp"),Bytes.toBytes("75"));
+              Bytes.toBytes("xp"), Bytes.toBytes("75"));
 
       // Save the table
       hTable.put(p1);
-      System.out.println("data inserted");
       hTable.put(p2);
-      System.out.println("data inserted");
       hTable.put(p3);
       System.out.println("data inserted");
 
@@ -115,7 +113,8 @@ public class SuperTable{
 
       // Read values from scan result
       // Print scan result
-      for (Result result = scanner.next(); result != null; result = scanner.next())
+//      for (Result result = scanner.next(); result != null; result = scanner.next())
+         Result result = scanner.next()
          System.out.println("Found row : " + result);
 
       // Close the scanner

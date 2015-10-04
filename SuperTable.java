@@ -114,7 +114,7 @@ public class SuperTable{
       // Read values from scan result
       // Print scan result
 //      for (Result result = scanner.next(); result != null; result = scanner.next())
-         Result result = scanner.next()
+         Result result = scanner.next();
          System.out.println("Found row : " + result);
 
       // Close the scanner

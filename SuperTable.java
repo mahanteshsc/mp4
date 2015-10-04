@@ -121,7 +121,7 @@ public class SuperTable{
       // Close the scanner
       scanner.close();
 
-      // Htable closer
+      // Htable closer  sdas
       hTable.close();
    }
 }
